@@ -12,7 +12,7 @@ import { StoreProvider } from './context/StoreContext';
 function App() {
   return (
     <StoreProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="app">
           <Navbar />
           <Routes>
